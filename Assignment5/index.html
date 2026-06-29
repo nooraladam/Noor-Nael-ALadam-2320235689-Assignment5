@@ -1,52 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Assignment 1</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <title>Task 1: Landing Page</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+
+    <style>
+        /* =============================================
+
+           Write ALL your CSS here.
+
+           Style the landing page using Flexbox and CSS Grid.
+
+           ============================================= */
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+
+
+
+
+        /* TODO 1: Navbar (Flexbox) */
+
+
+
+
+
+        /* TODO 2: Hero Section (Flexbox centering) */
+
+
+
+
+
+        /* TODO 3: Features Section (CSS Grid - 3 columns) */
+
+
+
+
+
+        /* TODO 4: Testimonials (Flexbox row) */
+
+
+
+
+
+        /* TODO 5: Footer (CSS Grid - 3 columns) */
+    </style>
+
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">Noor Nael ALadam</div>
-        <nav class="nav-links">
-            <a href="#hero">Home</a>
-            <a href="#services">Services</a>
-            <a href="#footer">Contact</a>
-        </nav>
-    </header>
 
-    <section id="hero" class="hero-section">
-        <h1>Smart Engineering Solutions</h1>
-        <p>We build high-quality, responsive websites using the latest modern web technologies.</p>
-        <a href="#services" class="btn">Get Started</a>
-    </section>
 
-    <section id="services" class="services-section">
-        <h2 class="title">Our Services</h2>
+    <!-- Navbar -->
 
-        <div class="services-grid">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Creating beautiful and modern website layouts tailored for your business needs.</p>
+    <nav class="navbar">
+
+        <div class="logo">TechLaunch</div>
+
+        <ul class="nav-links">
+
+            <li><a href="#hero">Home</a></li>
+
+            <li><a href="#features">Features</a></li>
+
+            <li><a href="#testimonials">Reviews</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+            <h1 class="hero-title">Build Something Amazing</h1>
+
+            <p class="hero-subtitle">The modern platform for web developers. Ship faster, scale better, and delight your
+                users.</p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn btn-primary">Get Started</a>
+
+                <a href="#" class="btn btn-secondary">Learn More</a>
+
             </div>
-            <div class="card">
-                <h3>Development</h3>
-                <p>Writing clean, efficient, and semantic HTML/CSS code that loads incredibly fast.</p>
-            </div>
-            <div class="card">
-                <h3>SEO Optimization</h3>
-                <p>Structuring clean code so that search engines like Google can index your page perfectly.</p>
-            </div>
+
         </div>
+
     </section>
 
-    <footer id="footer" class="footer">
-        <p>All rights reserved&copy; 2026 Noor Nael ALadam. .</p>
+
+
+    <!-- Features Section -->
+
+    <section class="features" id="features">
+
+        <h2 class="section-heading">Why Choose Us</h2>
+
+        <p class="section-subheading">Everything you need to build modern websites</p>
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">&#9889;</div>
+
+                <h3>Lightning Fast</h3>
+
+                <p>Optimized performance that loads in milliseconds. Your users will love the speed.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">&#128274;</div>
+
+                <h3>Secure by Default</h3>
+
+                <p>Enterprise-grade security built into every layer. Sleep well at night.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">&#128640;</div>
+
+                <h3>Easy to Deploy</h3>
+
+                <p>One-click deployment to any cloud provider. No DevOps experience needed.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Testimonials -->
+
+    <section class="testimonials" id="testimonials">
+
+        <h2 class="section-heading">What People Say</h2>
+
+        <div class="testimonials-container">
+
+            <div class="testimonial-card">
+
+                <p class="testimonial-text">"This platform changed how we build products. Our development time was cut
+                    in half."</p>
+
+                <div class="testimonial-author">
+
+                    <img src="https://i.pravatar.cc/50?img=1" alt="Avatar" class="author-avatar">
+
+                    <div>
+
+                        <strong>Sarah Johnson</strong>
+
+                        <span>CTO, TechCorp</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p class="testimonial-text">"The best developer experience I've ever had. Clean, intuitive, and
+                    powerful."</p>
+
+                <div class="testimonial-author">
+
+                    <img src="https://i.pravatar.cc/50?img=3" alt="Avatar" class="author-avatar">
+
+                    <div>
+
+                        <strong>Ahmed Hassan</strong>
+
+                        <span>Lead Developer, StartupXYZ</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p class="testimonial-text">"We migrated our entire infrastructure in a weekend. Incredible
+                    documentation!"</p>
+
+                <div class="testimonial-author">
+
+                    <img src="https://i.pravatar.cc/50?img=5" alt="Avatar" class="author-avatar">
+
+                    <div>
+
+                        <strong>Maria Garcia</strong>
+
+                        <span>Founder, WebFlow</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="site-footer" id="contact">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Features</a></li>
+
+                    <li><a href="#">Pricing</a></li>
+
+                    <li><a href="#">Documentation</a></li>
+
+                    <li><a href="#">Blog</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>About Us</h4>
+
+                <p>TechLaunch is a modern web development platform built for developers who value speed, security, and
+                    simplicity. Founded in 2024.</p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>Connect</h4>
+
+                <ul>
+
+                    <li><a href="#">Twitter</a></li>
+
+                    <li><a href="#">GitHub</a></li>
+
+                    <li><a href="#">LinkedIn</a></li>
+
+                    <li><a href="#">Discord</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2026 TechLaunch. All rights reserved.</p>
+
+        </div>
+
     </footer>
+
+
 
 </body>
 
